@@ -1,0 +1,16 @@
+PODS:
+  - MGCategoryKit (0.1.0)
+
+DEPENDENCIES:
+  - MGCategoryKit
+
+SPEC REPOS:
+  https://github.com/miaohy/MGSpecs.git:
+    - MGCategoryKit
+
+SPEC CHECKSUMS:
+  MGCategoryKit: 8367474e29190dff65bcba52eddf1b6b5406de8e
+
+PODFILE CHECKSUM: 15df81768299da25b2da88ec582e8d1e3c417f2e
+
+COCOAPODS: 1.9.3

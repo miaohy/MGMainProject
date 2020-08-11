@@ -1,0 +1,6 @@
+framework module MGCategoryKit {
+  umbrella header "MGCategoryKit-umbrella.h"
+
+  export *
+  module * { export * }
+}
