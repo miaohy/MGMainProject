@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,7 @@
 		183ED1C124E2E15600CD048F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 183ED1C024E2E15600CD048F /* main.m */; };
 		183ED1CB24E2E15600CD048F /* MGMainProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 183ED1CA24E2E15600CD048F /* MGMainProjectTests.m */; };
 		183ED1D624E2E15600CD048F /* MGMainProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 183ED1D524E2E15600CD048F /* MGMainProjectUITests.m */; };
+		183ED1E524E370EE00CD048F /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 183ED1E424E370EE00CD048F /* Person.m */; };
 		3F6C4339ACDEA9B84DB85979 /* Pods_MGMainProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06F6E98D0F836DA32FC38881 /* Pods_MGMainProject.framework */; };
 		A4918A02B51DA4002EBF61E3 /* Pods_MGMainProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A89964AA245C9E55E07FC07 /* Pods_MGMainProjectTests.framework */; };
 /* End PBXBuildFile section */
@@ -58,6 +59,8 @@
 		183ED1D124E2E15600CD048F /* MGMainProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MGMainProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		183ED1D524E2E15600CD048F /* MGMainProjectUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MGMainProjectUITests.m; sourceTree = "<group>"; };
 		183ED1D724E2E15600CD048F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		183ED1E324E370EE00CD048F /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		183ED1E424E370EE00CD048F /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		6A89964AA245C9E55E07FC07 /* Pods_MGMainProjectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MGMainProjectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D1775AD703E702EE652DFE9 /* Pods-MGMainProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MGMainProjectTests.release.xcconfig"; path = "Target Support Files/Pods-MGMainProjectTests/Pods-MGMainProjectTests.release.xcconfig"; sourceTree = "<group>"; };
 		A32BBF697F10CF558D4EEE13 /* Pods-MGMainProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MGMainProject.release.xcconfig"; path = "Target Support Files/Pods-MGMainProject/Pods-MGMainProject.release.xcconfig"; sourceTree = "<group>"; };
@@ -127,6 +130,8 @@
 				183ED1BC24E2E15600CD048F /* LaunchScreen.storyboard */,
 				183ED1BF24E2E15600CD048F /* Info.plist */,
 				183ED1C024E2E15600CD048F /* main.m */,
+				183ED1E324E370EE00CD048F /* Person.h */,
+				183ED1E424E370EE00CD048F /* Person.m */,
 			);
 			path = MGMainProject;
 			sourceTree = "<group>";
@@ -166,7 +171,6 @@
 				BFD35B550E77E53F768E4304 /* Pods-MGMainProjectTests.debug.xcconfig */,
 				8D1775AD703E702EE652DFE9 /* Pods-MGMainProjectTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -369,6 +373,7 @@
 			files = (
 				183ED1B624E2E14B00CD048F /* ViewController.m in Sources */,
 				183ED1B024E2E14B00CD048F /* AppDelegate.m in Sources */,
+				183ED1E524E370EE00CD048F /* Person.m in Sources */,
 				183ED1C124E2E15600CD048F /* main.m in Sources */,
 				183ED1B324E2E14B00CD048F /* SceneDelegate.m in Sources */,
 			);

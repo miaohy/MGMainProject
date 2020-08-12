@@ -5,7 +5,7 @@ use_frameworks!
 platform :ios, '8.0'
 
 target 'MGMainProject' do
-  pod 'MGCategoryKit'
+  pod 'MGCategoryKit','0.1.2'
 
   target 'MGMainProjectTests' do
     inherit! :search_paths

@@ -13,6 +13,7 @@
 #import "NSArray+Wgarray.h"
 #import "NSString+HUString.h"
 #import "UIAlertController+HuAlert.h"
+#import "Person.h"
 
 FOUNDATION_EXPORT double MGCategoryKitVersionNumber;
 FOUNDATION_EXPORT const unsigned char MGCategoryKitVersionString[];
