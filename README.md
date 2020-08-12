@@ -78,23 +78,23 @@ pod repo push MGSpecs MGCategoryKit.podspec --verbose --allow-warnings
 遇到问题5 库文件都在一个文件夹，无法分层，需求实现class文件夹下面有 categoryFile、 controller、Model、View等目录
 解决方法  
 修改MGCategoryKit.podspec这个文件
-s.subspec 'categoryFile' do |ss|
-    ss.source_files = 'MGCategoryKit/Classes/categoryFile/*'
+s.subspec 'categoryFile' do |ss|  
+    ss.source_files = 'MGCategoryKit/Classes/categoryFile/*'  
   end
   
-  s.subspec 'controller' do |ss|
-    ss.source_files = 'MGCategoryKit/Classes/controller/*'
-  end
+  s.subspec 'controller' do |ss|  
+    ss.source_files = 'MGCategoryKit/Classes/controller/*'  
+  end  
   
-  s.subspec 'Model' do |ss|
-    ss.source_files = 'MGCategoryKit/Classes/Model/*'
-  end
+  s.subspec 'Model' do |ss|  
+    ss.source_files = 'MGCategoryKit/Classes/Model/*'  
+  end  
   
-  s.subspec 'View' do |ss|
-    ss.source_files = 'MGCategoryKit/Classes/View/*'
-  end
+  s.subspec 'View' do |ss|  
+    ss.source_files = 'MGCategoryKit/Classes/View/*'  
+  end  
   
-  s.source_files ='MGCategoryKit/SubClasses/**/*'
-   s.resource_bundles = {
-     'MGCategoryKit' => ['MGCategoryKit/Assets/*.png']
-   }
+  s.source_files ='MGCategoryKit/SubClasses/**/*'  
+   s.resource_bundles = {  
+     'MGCategoryKit' => ['MGCategoryKit/Assets/*.png']  
+   }  
