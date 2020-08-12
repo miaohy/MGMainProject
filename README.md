@@ -100,9 +100,9 @@ s.subspec 'categoryFile' do |ss|
    }  
    
    对与组件中bundle资源的获取
-    NSString *normalImgName = [NSString stringWithFormat:@"%@@2x.png", @"Group"];
-   NSBundle *curBundle = [NSBundle bundleForClass:self.class];
-   NSString *curBundleName = curBundle.infoDictionary[@"CFBundleName"];
-   NSString *curBundleDirectory = [NSString stringWithFormat:@"%@.bundle", curBundleName];
-   NSString *normalImgPath = [curBundle pathForResource:normalImgName ofType:nil inDirectory:curBundleDirectory];
-   imageview.image  = [UIImage imageWithContentsOfFile:normalImgPath];
+    NSString *normalImgName = [NSString stringWithFormat:@"%@@2x.png", @"Group"];  
+   NSBundle *curBundle = [NSBundle bundleForClass:self.class];  
+   NSString *curBundleName = curBundle.infoDictionary[@"CFBundleName"];  
+   NSString *curBundleDirectory = [NSString stringWithFormat:@"%@.bundle", curBundleName];  
+   NSString *normalImgPath = [curBundle pathForResource:normalImgName ofType:nil inDirectory:curBundleDirectory];  
+   imageview.image  = [UIImage imageWithContentsOfFile:normalImgPath];  
