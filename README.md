@@ -96,5 +96,13 @@ s.subspec 'categoryFile' do |ss|
   
   s.source_files ='MGCategoryKit/SubClasses/**/*'  
    s.resource_bundles = {  
-     'MGCategoryKit' => ['MGCategoryKit/Assets/*.png']  
+     'MGCategoryKit' => ['MGCategoryKit/Assets/*.png']  // 对图片的管理，会生成bundle文件
    }  
+   
+   对与组件中bundle资源的获取
+    NSString *normalImgName = [NSString stringWithFormat:@"%@@2x.png", @"Group"];
+   NSBundle *curBundle = [NSBundle bundleForClass:self.class];
+   NSString *curBundleName = curBundle.infoDictionary[@"CFBundleName"];
+   NSString *curBundleDirectory = [NSString stringWithFormat:@"%@.bundle", curBundleName];
+   NSString *normalImgPath = [curBundle pathForResource:normalImgName ofType:nil inDirectory:curBundleDirectory];
+   imageview.image  = [UIImage imageWithContentsOfFile:normalImgPath];
